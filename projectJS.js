@@ -164,7 +164,7 @@ function makeResume() {
         }
         var win = window.open("");
         win = win.document;
-        win.write("<!DOCTYPE html><html><head><title>WEB-115 Resume</title><link rel='stylesheet' href='resume.css'></head><body class='resumePage'><div class='resume'><span class='cutout'></span><div class='nameBanner' id='banner'><p><strong><span class='bannerName'>")
+        win.write("<!DOCTYPE html><html><head><title>Resume</title><link rel='stylesheet' href='resume.css'></head><body class='resumePage'><div class='resume'><span class='cutout'></span><div class='nameBanner' id='banner'><p><strong><span class='bannerName'>")
         win.write(name + "</span>")
         if (pronouns != "") {
             win.write("<br>" + pronouns + "</strong>");
