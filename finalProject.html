@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEB-115 Final Project</title>
+        <link rel="stylesheet" href="resume.css">
+    </head>
+
+    <body class="inputForm">
+        <div class="banner">
+            <h2>Build Your Resume</h2>
+            <h3>By Evelyn Kammerzell</h3>
+            <h5>WEB.115.0001</h5>
+        </div>
+
+        <hr><h4>Contact Information</h4><hr>
+
+        <form> 
+            <div class="contact" name="contact">
+                <label for="name">Full Name:</label>
+                <label for="pronuns">Pronouns:</label>
+
+                <input type="text" id="name" name="name" placeholder="Jane Doe">
+                <input type="text" id="pronouns" name="pronouns" placeholder="She/Her He/Him They/Them">
+
+                <p></p><p></p>
+                
+                <label for="number">Phone Number:</label>
+                <label for="email">Email Address:</label>
+
+                <input type="tel" id="number" name="number" placeholder="(919) 867-5309">
+                <input type="email" id="email" name="email" placeholder="JaneFDoe@norse.com">
+
+                <p></p><p></p>
+
+                <label for="street">Street Address:</label>
+                <label for="apt">Apartment or Suite:</label>
+
+                <input type="text" id="street" name="street" placeholder="221 Baker St">
+                <input type="text" id="apt" name="apt" placeholder="Apt B">
+
+                <p></p><p></p>
+
+                <label for="city">City:</label>
+                <label for="state">State:</label>
+
+                <input type="" id="city" name="city" placeholder="Storybrooke">
+                <select id="state" name="state">
+                    <option value="">-----</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select>
+                
+                <p></p><p></p>
+
+                <label for="Country">Country:</label>
+                <label for="zip">Zip:</label>
+
+                <input type="text" id="Country" name="Country" value="United States" readonly>
+                <input type="text" id="zip" name="zip" placeholder="20500">
+
+                <p></p><p></p>
+
+                <input type="button" id="addURL" value="Click to add personal URL">
+            </div>
+        </form>
+
+        <br><hr><h4>Skills and Expertise</h4><hr>
+
+        <form>
+            <p>Enter one skill per box. Click the button to create more boxes as needed.</p>
+            <div class="fiveGrid" id="skillsGrid">
+                <input type="text" class="skill" placeholder="Barter">
+                <input type="text" class="skill" placeholder="Pilot">
+                <input type="text" class="skill" placeholder="Speech">
+                <input type="button" value="Add Box" id="addSkill">
+            </div>
+        </form><br>
+
+        <form>
+            <p>Enter one area of expertise per box. Click the button to create more boxes as needed.</p>
+            <div class="fiveGrid" id="expertiseGrid">
+                <input type="text" class="expertise" placeholder="JavaScript">
+                <input type="text" class="expertise" placeholder="Python">
+                <input type="button" value="Add Box" id="addExpertise">
+            </div>
+        </form>
+
+        <br><hr><h4>Education</h4><hr>
+
+        <form id="eduForm">
+            <div id="educationDiv">
+                <label for="education">Enter your education background here. Text will be stylized as inputted below</label>
+                <textarea id="education" placeholder="Harvard - Juris Doctor - 2004"></textarea><br><br>
+            </div>
+            <input type="button" id="addEducation" value="Click for Add'l Education">
+        </form>
+
+        <br><hr><h4>Experience</h4><hr>
+
+        <form>
+            <p>Previous Employment 1</p>
+            <div class="threeGrid" id="emp1">
+                <label for="title">Position Title</label>
+                <label for="company">Company Name</label>
+                <label for="contact">Supervisor Name</label>
+                <input type="text" id="title" name="title" placeholder="Paper Salesman">
+                <input type="text" id="company" name="company" placeholder="Dunder Mifflin">
+                <input type="text" id="contact" name="contact" placeholder="Michael Scott">
+                <p></p><p></p><p></p>
+                <label for="start">Start Date</label>
+                <label for="end">End Date (leave blank for concurrancy)</label>
+                <label for="num">Supervisor Phone</label>
+                <input type="date" id="start" name="start">
+                <input type="date" name="end" id="end">
+                <input type="tel" name="num" id="num" placeholder="308-786-4983">
+            </div>
+            <br><label for="emp1Text">Enter details of position, such as responsibilities and skills used:</label>
+            <textarea id="emp1Text"></textarea><br><br>
+
+            <p>Previous Employment 2</p>
+            <div class="threeGrid" id="emp2">
+                <label for="title">Position Title</label>
+                <label for="company">Company Name</label>
+                <label for="contact">Supervisor Name</label>
+                <input type="text" id="title" name="title" placeholder="Shoe Shiner">
+                <input type="text" id="company" name="company" placeholder="City of Pawnee">
+                <input type="text" id="contact" name="contact" placeholder="Ron Swanson">
+                <p></p><p></p><p></p>
+                <label for="start">Start Date</label>
+                <label for="end">End Date (leave blank for concurrancy)</label>
+                <label for="num">Supervisor Phone</label>
+                <input type="date" id="start" name="start">
+                <input type="date" name="end" id="end">
+                <input type="tel" name="num" id="num" placeholder="877-722-6762">
+            </div>
+            <br><label for="emp2Text">Enter details of position, such as responsibilities and skills used:</label>
+            <textarea id="emp2Text"></textarea><br><br>
+
+            <p>Previous Employment 3</p>
+            <div class="threeGrid" id="emp3">
+                <label for="title">Position Title</label>
+                <label for="company">Company Name</label>
+                <label for="contact">Supervisor Name</label>
+                <input type="text" id="title" name="title" placeholder="Detective">
+                <input type="text" id="company" name="company" placeholder="99th Brooklyn Precinct">
+                <input type="text" id="contact" name="contact" placeholder="Raymond Holt">
+                <p></p><p></p><p></p>
+                <label for="start">Start Date</label>
+                <label for="end">End Date (leave blank for concurrancy)</label>
+                <label for="num">Supervisor Phone</label>
+                <input type="date" id="start" name="start">
+                <input type="date" name="end" id="end">
+                <input type="tel" name="num" id="num" placeholder="911">
+            </div>
+            <br><label for="emp3Text">Enter details of position, such as responsibilities and skills used:</label>
+            <textarea id="emp3Text"></textarea><br><br>
+        </form>
+
+        <br><hr><h4>Professional References</h4><hr>
+
+        <form id="refForm">
+            <div class="refGrid">
+                <div class="threeGrid">
+                    <label for="name">Reference Name</label>
+                    <label for="number">Reference Phone Number</label>
+                    <label for="email">Reference Email Address</label>
+                    <input type="text" id="name" name="name" placeholder="Ted Mosby">
+                    <input type="tel" id="number" name="number" placeholder="917-555-0197">
+                    <input type="email" id="email" name="email" placeholder="teddywestside@aol.com">
+                </div><br>
+                <textarea class="reference"></textarea><br><br>
+            </div>
+            <input type="button" id="addRef" value="Click for Add'l Reference">
+        </form><br><br><br><input type="hidden" value="I exist only to make space!"><br><br><br>
+
+        <button class="makeResume" id="makeResume">M<br>A<br>K<br>E<br> <br>R<br>E<br>S<br>U<br>M<br>E</button>
+
+        <script src="projectJS.js"></script>
+    </body>
+</html>
+
+<!--
+Reqs:
+- Banner with name, course/section number, and "Build Your Resume"
+- create resume button 
+- email only validation requirement
+h, r, v, aa, bb, cc, dd
+-->
